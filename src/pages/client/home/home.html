@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Store</title>
+    <link rel="stylesheet" href="../../../css/styles.css"> 
+</head>
+<body>
+    <header>
+        <h1>Food Store</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Mis pedidos</a></li>
+                <li><a href="../cart/cart.html">Carrito</a></li>
+                <li><a href="../../admin/admin.html">Panel Admin</a></li>
+            </ul>
+        </nav>
+    </header>
+    <aside>
+        <h2>Categorías</h2>
+            <ul id="lista-categorias"></ul> 
+    </aside>
+    <main>
+        <form>
+            <input id="buscador" type="text" placeholder="Buscar productos..."> 
+            <button type="submit" >Buscar</button>
+        </form>
+            <h2>Productos destacados</h2>
+            <section id="contenedor-productos"></section>
+    </main>
+    <footer> 
+        <p>&copy; 2026 Food Store</p>
+        <p>Contacto:
+            <a href="mailto:info@foodstore.com">info@foodstore.com</a></p>
+        <p>Tel: +54 11 221-544131</p>
+        <p>Dirección: Avenida San Juan 321</p>
+    </footer>
+    <script type="module" src="./home.ts"></script>
+    <script type="module" src="/src/main.ts"></script>
+</body>
+</html>

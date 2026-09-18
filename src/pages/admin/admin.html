@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/styles.css">
+    <title>Panel Admin - Food Store</title>
+</head>
+<body>
+    <header>
+        <h1>Panel de administración</h1>
+        <nav>
+            <ul>
+                <li><a href="../client/index.html">Volver a la tienda</a></li>
+                <li><a href="#">Cerrar sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="gestionProductos">
+            <h2>Gestión productos</h2> 
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th scope="col">ID</th>
+                            <th scope="col">Imagen</th>
+                            <th scope="col">Nombre</th>
+                            <th scope="col">Categoría</th>
+                            <th scope="col">Precio</th>
+                            <th scope="col">Stock</th>
+                            <th scope="col">Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td><img src="../../assets/burga.jpg" width="100" alt="Imagen hamburguesa"></td>
+                            <td>Hamburguesa</td>
+                            <td>Hamburguesas</td>
+                            <td>$15000</td>
+                            <td>20</td>
+                            <td><a href="#">Editar</a> | <a href="#">Eliminar</a></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td><img src="../../assets/pizza.jpg" width="100" alt="Imagen pizza"></td>
+                            <td>Pizza</td>
+                            <td>Pizzas</td>
+                            <td>$12000</td>
+                            <td>25</td>
+                            <td><a href="#">Editar</a> | <a href="#">Eliminar</a></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td><img src="../../assets/coca.jpg" width="100" alt="Imagen pizza"></td>
+                            <td>Coca-Cola</td>
+                            <td>Bebidas</td>
+                            <td>$8000</td>
+                            <td>30</td>
+                            <td><a href="#">Editar</a> | <a href="#">Eliminar</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section id="agregarProducto">
+                <h2>Agregar producto rápido</h2>
+                <form action="#" method="get">
+                    <fieldset>
+                        <legend>Datos del producto</legend>
+                        <label for="nombre">Nombre: </label><br />
+                        <input type="text" id="nombre" name="nombre" placeholder="Ej. Hamburguesa" required
+                            title="Solo letras, mínimo 3 caracteres" /><br /><br />
+                        <label for="precio">Precio: </label><br />
+                        <input type="number" id="precio" name="precio" placeholder="Ej. 10000" required
+                            title="Solo números, mínimo 3 caracteres" /><br /><br />
+                        <label for="precio">Stock: </label><br />
+                        <input type="number" id="stock" name="stock" placeholder="Ej. 15" required
+                            title="Solo números, mínimo 1 caracter" /><br /><br />
+                        <label for="categoria">Categoría:</label>
+                        <select id="categoria" name="categoria">
+                            <option value="" selected disabled>-- Seleccione una categoría --</option>
+                            <option value="hamburguesas">Hamburguesas</option>
+                            <option value="pizzas">Pizzas</option>
+                            <option value="bebidas">Bebidas</option>
+                        </select><br /> <br /> 
+                        <label for="descripcion">Descripción</label><br /> 
+                        <textarea id="descripcion" name="descripcion" rows="4" cols="30" required
+                            placeholder="Ingredientes del producto..."></textarea><br />
+                        <button type="button" >Agregar</button><br /><br /><br />
+                    </fieldset>
+                </form>
+
+            </section>
+    </main>
+    <footer> 
+        <p>&copy; 2026 Food Panel Administración</p> 
+    </footer>
+    <script type="module" src="/src/main.ts"></script>
+</body>
+</html>
