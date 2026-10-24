@@ -1,5 +1,8 @@
 # Food Store
 
+🔗 **Demo online:** https://food-store-facundo.vercel.app
+Para probarlo, registrate como cliente y después iniciá sesión.
+
 LINK VIDEO: https://drive.google.com/file/d/1hD0hS3ITaaM6wcvPfiXqW44_Ux-RLtg1/view?usp=sharing
 
 Aplicación frontend desarrollada con HTML5, CSS3, JavaScript y TypeScript para la materia Programación III (Tecnicatura Universitaria en Programación, UTN). El proyecto evoluciona el catálogo estático original hacia una aplicación dinámica e interactiva, incorporando autenticación con roles (Trabajo Práctico Integrador) y, en esta entrega (Evaluación 1), un catálogo con búsqueda y filtrado por categoría, más un carrito de compras persistido en `localStorage`.
