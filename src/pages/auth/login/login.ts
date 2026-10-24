@@ -1,5 +1,4 @@
-import type { IUser } from "../../../types/user";
-import { guardarUsuarios, obtenerUsuarios } from "../../../utils/localStorage";
+import { obtenerUsuarios } from "../../../utils/localStorage";
 
 const formLogin = document.getElementById("form-login");
 
